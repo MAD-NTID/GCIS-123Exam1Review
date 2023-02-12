@@ -1,0 +1,22 @@
+1. A class is the blueprint/template from which a object will be created.
+The class describes what attributes and behaviors the object have. Object
+is the actual/concrete implementation of the class.
+
+2. Missing semicolon after int x = 3 and mainWindow.show()
+
+3.
+abstract class
+================
+ - can have state
+ - can be extended
+ - can have constructor
+ - abstract methods doesnt have body
+ - only one abstract class
+
+interface
+===========
+- cannot have state
+ - can be implemented using the implemented keyword, you can extend to another interface
+ - cant have constructor
+ - can implement several interfaces
+ - help achieve loosely coupling
