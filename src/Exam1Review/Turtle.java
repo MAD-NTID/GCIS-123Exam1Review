@@ -18,6 +18,7 @@ public class Turtle extends Animal
         //Every me it runs, there’s a 50% chance that it will lose
         //all its stamina.
         if(this.isChance(FIFTY_PERCENT_CHANCE)){
+            System.out.println("Ah bummer, this is a 50% chance and the turtle lose all its stamina");
             super.setStamina(LOSE_ALL_STAMINA);
         }
 

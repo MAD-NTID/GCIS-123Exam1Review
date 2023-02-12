@@ -18,16 +18,16 @@ public class Showdown
             System.out.println(String.format("%s speed:%s, stamina:%s",name,competitor.getSpeed(), competitor.getStamina()));
         }
 
+        System.out.println();
+
 
         while(!this.hasWinner()){
 
             for(Animal competitor: competitors)
             {
-                String name = competitor.getClass().getName();
-                int run = competitor.run();
-                int distance = competitor.getDistance();
-
-                System.out.println(String.format("%s move %s. The total distance ran: %s", name,run,distance));
+                competitor.run();
+                System.out.println(competitor.toString());
+     
             }
         }
 

@@ -20,16 +20,12 @@ public class Boar extends Animal
 
         //When it doesn’t have enough stamina to run, it moves at half
         //of its speed.
-        if(super.getStamina() < super.getSpeed()){
+        if(!super.hasEnoughStamina()){
+            System.out.print(String.format("Boar currently do not have enough stamina(%s)... attempt to run at half speed (%s)",super.getStamina(), MOVE_AT_HALF_SPEED));
             super.setSpeed(MOVE_AT_HALF_SPEED);
         }
 
         return super.run();
     }
 
-    @Override
-    public String toString()
-    {
-        return String.format("Exam1Review.Boar has run %s", super.getDistance());
-    }
 }
