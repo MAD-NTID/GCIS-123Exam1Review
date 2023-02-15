@@ -11,11 +11,13 @@ abstract class
  - can be extended
  - can have constructor
  - abstract methods doesnt have body
+ - non abstract method body can be implemented
  - only one abstract class
 
 interface
 ===========
 - cannot have state
+- interface method doesnt have body
  - can be implemented using the implemented keyword, you can extend to another interface
  - cant have constructor
  - can implement several interfaces
